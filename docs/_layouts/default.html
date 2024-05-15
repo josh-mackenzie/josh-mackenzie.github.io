@@ -56,47 +56,48 @@
                         <section id="skills" class="timeline-entry">
                             <div class="timeline-point"></div>
                             <h2>Skills</h2>
-                            <table class="skills-table">
-                                <tr>
-                                    <th style="width: 50%; text-align: left;">Languages (Established)</th>
-                                    <th style="width: 50%; text-align: left; border-left: 2px solid #424242;">Languages (Exploring)</th> 
-                                </tr>
-                                <tr>
-                                    {% for skills in site.data.cv.languages %}
-                                        <td>
+                            <div class="skills">
+                                <div class="section">
+                                    <h3>Languages (Established)</h3>
+                                    <p>
+                                        {% for skills in site.data.cv.languages %}
                                             {% for skill in skills.established %}
                                                 {{skill}}{% unless forloop.last %}, {% endunless %}
                                             {% endfor %}
-                                        </td>
-                                        <td class="right-column">
+                                        {% endfor %}
+                                    </p>
+                                </div>
+                                <div class="section">
+                                    <h3>Languages (Exploring)</h3>
+                                    <p>
+                                        {% for skills in site.data.cv.languages %}
                                             {% for skill in skills.exploring %}
-                                                {{skill}}{% unless forloop.last %}, {% endunless %}                                                
+                                                {{skill}}{% unless forloop.last %}, {% endunless %}
                                             {% endfor %}
-                                        </td>
-                                    {% endfor %}
-                                </tr>
-                            </table>
-
-                            <table class="skills-table">
-                                <tr>
-                                    <th style="width: 50%; text-align: left;">Technologies (Established)</th>
-                                    <th style="width: 50%; text-align: left; border-left: 2px solid #424242;">Technologies (Exploring)</th> 
-                                </tr>
-                                <tr>
-                                    {% for skills in site.data.cv.technologies %}
-                                        <td>
+                                        {% endfor %}
+                                    </p>
+                                </div>
+                                <div class="section">
+                                    <h3>Technologies (Established)</h3>
+                                    <p>
+                                        {% for skills in site.data.cv.technologies %}
                                             {% for skill in skills.established %}
                                                 {{skill}}{% unless forloop.last %}, {% endunless %}
                                             {% endfor %}
-                                        </td>
-                                        <td class="right-column">
+                                        {% endfor %}
+                                    </p>
+                                </div>
+                                <div class="section">
+                                    <h3>Technologies (Exploring)</h3>
+                                    <p>
+                                        {% for skills in site.data.cv.technologies %}
                                             {% for skill in skills.exploring %}
-                                                {{skill}}{% unless forloop.last %}, {% endunless %}                                                
+                                                {{skill}}{% unless forloop.last %}, {% endunless %}
                                             {% endfor %}
-                                        </td>
-                                    {% endfor %}
-                                </tr>
-                            </table>
+                                        {% endfor %}
+                                    </p>
+                                </div>
+                              </div>
                         </section>
 
                         <section id="experience" class="timeline-entry">
