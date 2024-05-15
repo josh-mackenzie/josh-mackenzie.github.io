@@ -1,0 +1,214 @@
+@import url('https://unpkg.com/swiper/swiper-bundle.min.css');
+
+.no-color-change, .no-color-change:visited, .no-color-change:hover, .no-color-change:active {
+    color: #424242;
+}
+
+.no-color-change:hover {
+    text-decoration: underline;
+}
+
+.footer-heading {
+    margin-bottom: 0px;
+}
+
+.footer-col-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+.footer-col-2 {
+    flex-grow: 1;
+    padding: 0 10px;
+    text-align: right;
+}
+
+.timeline {
+    position: relative;
+    border-left: 2px solid #424242;
+    padding-left: 20px;
+}
+
+.timeline-entry {
+    position: relative;
+}
+
+.timeline-content {
+    position: relative;
+}
+
+.timeline-top {
+    position: absolute;
+    left: -6px;
+    top: 0px;
+    width: 10px;
+    height: 10px;
+    background-color: #424242;
+    border-radius: 50%;
+}
+
+.timeline-point {
+    position: absolute;
+    left: -26px;
+    top: 15px;
+    width: 10px;
+    height: 10px;
+    background-color: #424242;
+    border-radius: 50%;
+}
+
+.projects {
+    padding: 20px 0;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.project-tile {
+    background: #fff;
+    height: 225px;
+    border-radius: 8px;
+    box-shadow: 2px 4px 8px rgba(0,0,0,0.1);
+    border: 2px solid #424242;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+    margin: 5px;
+}
+
+.project-tile h3 {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+
+.project-tile p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.swiper-pagination {
+    text-align: center;
+    position: absolute;
+    bottom: -10px;
+    width: 100%;
+    left: 0;
+}
+
+.swiper-pagination, .swiper-pagination-clickable, .swiper-pagination-bullets, .swiper-pagination-horizontal {
+    bottom: -30px;
+}
+
+.swiper-wrapper {
+    padding: 10px;
+    padding-bottom: 50px;
+}
+
+.swiper-container {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-bottom: 30px;
+}
+
+.swiper-slide {
+    background: #fff;
+    height: 250px;
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 2px 4px 8px rgba(0,0,0,0.1);
+    border-color: #424242;
+    border-width: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.project-card {
+    width: 90%;
+    padding: 15px;
+    margin: 5px;
+}
+
+.project-card h3 {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+
+.project-card p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+
+.project-logo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.modules {
+    color: #424242;
+    font-size: 1em;
+}
+
+.list-styling {
+    padding-left: 20px;
+    font-size: 0.8em;
+}
+
+#skills table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#skills th {
+    text-align: left;
+    background-color: #f8f8f8;
+    padding: 8px;
+}
+
+#skills td {
+    text-align: left;
+    padding: 8px;
+    vertical-align: top;
+}
+
+#skills th, #skills td {
+    border-left: 2px solid #424242;
+}
+
+#skills tr td:first-child, #skills tr th:first-child {
+    border-left: none;
+}
+
+@media (max-width: 768px) {
+    #skills th, #skills td {
+        display: block;
+        width: 100%;
+        border-left: none;
+    }
+    #skills th, #skills td:nth-child(2) {
+        border-top: 2px solid #424242;
+    }
+}
+
+.right-column {
+    border-left: 2px solid #424242;
+}
+
+.skills-table {
+    width: 100%;
+    border-collapse: collapse;
+}

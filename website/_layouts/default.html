@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Begin Jekyll SEO tag v2.8.0 -->
+            <meta name="generator" content="Jekyll v4.3.3" />
+            <meta property="og:title" content="{{site.title}}" />
+            <meta property="og:locale" content="en_GB" />
+            <meta name="description" content="{{site.description}}" />
+            <meta property="og:description" content="{{site.description}}" />
+            <link rel="canonical" href="{{site.url}}" />
+            <meta property="og:url" content="{{site.url}}" />
+            <meta property="og:site_name" content="{{site.title}}" />
+            <meta property="og:type" content="website" />
+            <meta name="twitter:card" content="summary" />
+            <meta property="twitter:title" content="{{site.title}}" />
+            <script type="application/ld+json">
+            {"@context":"https://schema.org","@type":"WebSite","description":"{{site.description}}","headline":"{{site.title}}","name":"{{site.title}}","url":"{{site.url}}"}</script>
+        <!-- End Jekyll SEO tag -->
+        
+        <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Josh Mackenzie" />
+        <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>        
+
+        <title>{{site.title}} | {{site.description}}</title>
+    </head>
+    <body>
+        {% include header.html %}
+        <main class="page-content" aria-label="Content">
+            <div class="wrapper">
+                <section id="projects">
+                    <h2>Projects</h2>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            {% for project in site.data.cv.projects %}
+                            <div class="swiper-slide">    
+                                <a href="{{ project.link }}" class="project-card">
+                                    <img src="{{ project.image }}" alt="{{ project.name }}" class="project-logo">
+                                    <h3>{{ project.name }}</h3></a>
+                                    <p>{{ project.description }}</p>
+                            </div>
+                            {% endfor %}
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </section>
+                <div class="timeline">
+                    <div class="timeline-top"></div>                    
+                    <div class="timeline-content"></div>
+                        <br>
+                        <p style="text-align: justify;">{{ site.data.cv.summary }}</p>
+                
+                        <section id="skills" class="timeline-entry">
+                            <div class="timeline-point"></div>
+                            <h2>Skills</h2>
+                            <table class="skills-table">
+                                <tr>
+                                    <th style="width: 50%; text-align: left;">Languages (Established)</th>
+                                    <th style="width: 50%; text-align: left; border-left: 2px solid #424242;">Languages (Exploring)</th> 
+                                </tr>
+                                <tr>
+                                    {% for skills in site.data.cv.languages %}
+                                        <td>
+                                            {% for skill in skills.established %}
+                                                {{skill}}{% unless forloop.last %}, {% endunless %}
+                                            {% endfor %}
+                                        </td>
+                                        <td class="right-column">
+                                            {% for skill in skills.exploring %}
+                                                {{skill}}{% unless forloop.last %}, {% endunless %}                                                
+                                            {% endfor %}
+                                        </td>
+                                    {% endfor %}
+                                </tr>
+                            </table>
+
+                            <table class="skills-table">
+                                <tr>
+                                    <th style="width: 50%; text-align: left;">Technologies (Established)</th>
+                                    <th style="width: 50%; text-align: left; border-left: 2px solid #424242;">Technologies (Exploring)</th> 
+                                </tr>
+                                <tr>
+                                    {% for skills in site.data.cv.technologies %}
+                                        <td>
+                                            {% for skill in skills.established %}
+                                                {{skill}}{% unless forloop.last %}, {% endunless %}
+                                            {% endfor %}
+                                        </td>
+                                        <td class="right-column">
+                                            {% for skill in skills.exploring %}
+                                                {{skill}}{% unless forloop.last %}, {% endunless %}                                                
+                                            {% endfor %}
+                                        </td>
+                                    {% endfor %}
+                                </tr>
+                            </table>
+                        </section>
+
+                        <section id="experience" class="timeline-entry">
+                            <div class="timeline-point"></div>
+                            <h2>Experience</h2>
+                            {% for job in site.data.cv.experience %}
+                            <div>
+                                <div class="sub-heading">{{ job.title }} at {{ job.company }}</div>
+                                <div>{{ job.duration }}</div>
+                                <ul class="list-styling">
+                                    {% for duty in job.responsibilities %}
+                                    <li>{{ duty }}</li>
+                                    {% endfor %}
+                                    </ul>
+                            </div>
+                            {% endfor %}
+                        </section>
+                
+                        <section id="education" class="timeline-entry">
+                            <div class="timeline-point"></div>
+                            <h2>Education</h2>
+                            {% for edu in site.data.cv.education %}
+                            <div>
+                                {{ edu.degree }}, {{edu.grade}}
+                                <div style="color:#424242">{{ edu.institution }}, {{ edu.year }}</div>
+                                <div style="font-size: 0.8em">{{edu.info}}</div>
+                                <div class="modules">Relevant Modules:</div>
+                                <ul class="list-styling">
+                                    {% for module in edu.coding-modules %}
+                                        <li>{{module}}</li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                            {% endfor %}
+                        </section>
+                    </div>
+                </div>  
+            </div>
+        </main>
+        {% include footer.html %}
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var mySwiper = new Swiper('.mySwiper', {
+                    slidesPerView: 'auto',
+                    spaceBetween: 30,
+                    freeMode: true,
+                    centeredSlides: true,
+                    loop: true,
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                        type: 'bullets',
+                        dnymicBullets: true,
+                    },
+                    scrollbar: {
+                        el: '.swiper-scrollbar',
+                        hide: true,
+                    },
+                    mousewheel: true,
+                    grabCursor: true,
+                });
+            });
+        </script>             
+    </body>
+</html>

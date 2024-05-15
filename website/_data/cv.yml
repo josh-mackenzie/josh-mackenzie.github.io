@@ -1,0 +1,52 @@
+personal_info:
+  name: Josh Mackenzie
+  email: joshzbmackenzie+fromwebsite@gmail.com
+
+summary: Innovative and detail-oriented software developer with a strong foundation in electronic engineering and nanotechnology. Passionate about exploring cutting-edge technologies and development in Python, Go, and Kotlin with a focus on machine learning and mobile applications.
+
+languages:
+  - established: ["Python", "SQL", "Java", "C++"]
+    exploring: ["Go", "Kotlin", "Rust"]
+technologies:
+  - established: ["Git", "Prefect", "Pandas", "dbt", "Dremio", "TensorFlow"]
+    exploring: ["PyTorch", "Jekyll", "Flask", "Django", "React"]
+
+experience:
+  - title: Data Engineer
+    company: InCrowd Sports Ltd
+    duration: "October 2021 - March 2023"
+    responsibilities: 
+      - Developed and maintained robust automated end-to-end data pipelines, significantly enhancing data accessibility and integrity.
+      - Demonstrated expertise in Python and SQL, employing advanced coding techniques to optimize data processing tasks.
+      - Mastered a suite of technical tools including dbt, pandas, prefect, and Dremio, driving improvements in data handling and analysis capabilities.
+      - Engineered innovative automation solutions, notably for GDPR compliance, which streamlined complex legal processes and saved hundreds of hours through smart application integrations.
+      - Excelled in collaborative team environments, adeptly handling code reviews, pull requests, and leveraging tools like Git and Jira to foster Agile project management and team efficiency.
+
+education:
+  - degree: BEng (Hons) Electronic Engineering with Nanotechnology
+    grade: First Class
+    institution: University of York
+    year: 2021
+    coding-modules: ["Neutral Networks", "Chip design", "Programming (Java, Python, C++)"]
+    info: >-
+      Final year project involved researching machine learning algorithms with the
+      aim of creating a control system for the locomotion of tensengrity-based
+      robotic structures.
+
+projects:
+  - name: Blueteeth
+    description: An app for connecting multiple audio devices to one phone.
+    link: /projects/blueteeth
+    image: /assets/img/blueteeth.svg
+  - name: MedMinder
+    description: A reminder app for timely medication intake.
+    link: /projects/medminder
+    image: /assets/img/medminder.svg
+  - name: Vinoca
+    description: Comprehensive wine database software.
+    link: /projects/vinoca
+    image: /assets/img/vinoca.svg
+  - name: Winlle
+    description: A wine-related puzzle game inspired by Wordle.
+    link: /projects/winlle
+    image: /assets/img/winlle.svg

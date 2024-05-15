@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Begin Jekyll SEO tag v2.8.0 -->
+        <meta name="generator" content="Jekyll v4.3.3" />
+        <meta property="og:title" content="{{site.title}}" />
+        <meta property="og:locale" content="en_GB" />
+        <meta name="description" content="{{site.description}}" />
+        <meta property="og:description" content="{{site.description}}" />
+        <link rel="canonical" href="{{site.url}}" />
+        <meta property="og:url" content="{{site.url}}" />
+        <meta property="og:site_name" content="{{site.title}}" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary" />
+        <meta property="twitter:title" content="{{site.title}}" />
+        <script type="application/ld+json">
+        {"@context":"https://schema.org","@type":"WebSite","description":"{{site.description}}","headline":"{{site.title}}","name":"{{site.title}}","url":"{{site.url}}"}</script>
+        <!-- End Jekyll SEO tag -->
+
+        <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Josh Mackenzie" />
+        <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>        
+
+        <title>{{site.title}} | {{site.description}}</title>
+    </head>
+    <body>
+        {% include header.html %}
+        <main class="page-content" aria-label="Content">
+            <div class="wrapper">
+                <section id="projects" class="projects">
+                    <h2>Projects</h2>
+                    <div class="project-grid">
+                        {% for project in site.data.cv.projects %}
+                        <div class="project-tile">    
+                            <a href="{{ project.link }}">
+                                <img src="{{ project.image }}" alt="{{ project.name }}" class="project-logo">
+                                <h3>{{ project.name }}</h3>
+                            </a>
+                            <p>{{ project.description }}</p>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </section>
+            </div>
+        </main>
+        {% include footer.html %}        
+    </body>
+</html>
