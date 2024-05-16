@@ -13,14 +13,51 @@ technologies:
 
 experience:
   - title: Data Engineer
-    company: InCrowd Sports Ltd
-    duration: "October 2021 - March 2023"
+    company: InCrowd Sports
+    duration: Oct 2021 - Mar 2023
     responsibilities: 
       - Developed and maintained robust automated end-to-end data pipelines, significantly enhancing data accessibility and integrity.
       - Demonstrated expertise in Python and SQL, employing advanced coding techniques to optimize data processing tasks.
       - Mastered a suite of technical tools including dbt, pandas, prefect, and Dremio, driving improvements in data handling and analysis capabilities.
       - Engineered innovative automation solutions, notably for GDPR compliance, which streamlined complex legal processes and saved hundreds of hours through smart application integrations.
       - Excelled in collaborative team environments, adeptly handling code reviews, pull requests, and leveraging tools like Git and Jira to foster Agile project management and team efficiency.
+
+  - title: Various
+    company: Limmud
+    duration: Aug 2012 - Dec 2022
+    responsibilities:
+      - Organised registration, accommodation, transport, tech, participant care and resources for a variety of 3-7 day residential events for ~200-3000 attendees.
+
+  - title: Trustee
+    company: YUSU
+    duration: Mar 2019 - Mar 2021
+    responsibilities:
+      - Ensured regulatory compliance and financial stability for a c£5m organisation in line with my fiduciary duties.
+      - Introduced a <a href="https://www.livingwage.org.uk/what-real-living-wage">Real Living Wage</a> package, ensuring all our staff were fairly compensated.
+
+  - title: President
+    company: Electronics Society
+    duration: May 2018 - May 2021
+    responsibilities:
+      - Led a committee of fellow engineers representing the needs of our members.
+      - Hosted weekly lab sessions.
+      - Organised regular events and mentoring for our c500 membership.
+
+  - title: Policy Coordinator
+    company: YUSU
+    duration: Mar 2018 - Mar 2019
+    responsibilities:
+     - Led and facilitated policy development for the organisation.
+     - Chaired the policy review committee.
+     - Represented the views of members to the board.
+
+  - title: VP for Events
+    company: HCSA
+    duration: Jan 2018 -  Dec 2018
+    responsibilities:
+      - Organised events for our 3000 members, including a seven day "Welcome Week".
+      - Managed a c£50k budget.
+      - Negotiated deals with local venues for discounted entry and benefits for our members.
 
 education:
   - degree: BEng (Hons) Electronic Engineering with Nanotechnology
