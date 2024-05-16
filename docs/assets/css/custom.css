@@ -239,3 +239,15 @@
     margin: 0 0 10px;
   }
   
+.footer-col .footer-cv {
+    color: #424242;
+    font-size: 0.8em;
+}
+
+.footer-cv a {
+    color: #424242;
+}
+
+.footer-email {
+    color: #424242;
+}
