@@ -17,7 +17,7 @@ experience:
     duration: Oct 2021 - Mar 2023
     responsibilities: 
       - Developed and maintained robust automated end-to-end data pipelines, significantly enhancing data accessibility and integrity.
-      - Demonstrated expertise in Python and SQL, employing advanced coding techniques to optimize data processing tasks.
+      - Demonstrated expertise in Python and SQL, employing advanced coding techniques to optimise data processing tasks.
       - Mastered a suite of technical tools including dbt, pandas, prefect, and Dremio, driving improvements in data handling and analysis capabilities.
       - Engineered innovative automation solutions, notably for GDPR compliance, which streamlined complex legal processes and saved hundreds of hours through smart application integrations.
       - Excelled in collaborative team environments, adeptly handling code reviews, pull requests, and leveraging tools like Git and Jira to foster Agile project management and team efficiency.
