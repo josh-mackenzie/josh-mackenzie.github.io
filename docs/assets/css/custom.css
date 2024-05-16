@@ -206,6 +206,9 @@
     #skills th, #skills td:nth-child(2) {
         border-top: 2px solid #424242;
     }
+    .section {
+        flex: 1 1 100%;
+      }
 }
 
 .right-column {
@@ -234,11 +237,5 @@
   
   .section h3 {
     margin: 0 0 10px;
-  }
-  
-  @media (max-width: 768px) {
-    .section {
-      flex: 1 1 100%;
-    }
   }
   
