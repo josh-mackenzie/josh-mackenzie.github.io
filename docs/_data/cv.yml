@@ -9,7 +9,7 @@ languages:
     exploring: ["Go", "Kotlin", "Rust"]
 technologies:
   - established: ["Git", "Prefect", "Pandas", "dbt", "Dremio", "TensorFlow"]
-    exploring: ["PyTorch", "Jekyll", "Flask", "Django", "React"]
+    exploring: ["PyTorch", "Jekyll", "Flask", "Django", "React", "Bun"]
 
 experience:
   - title: Data Engineer
