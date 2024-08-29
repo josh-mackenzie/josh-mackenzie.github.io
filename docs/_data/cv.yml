@@ -8,8 +8,8 @@ languages:
   - established: ["Python", "SQL", "Java", "C++"]
     exploring: ["Go", "Kotlin", "Rust"]
 technologies:
-  - established: ["Git", "Prefect", "Pandas", "dbt", "Dremio", "TensorFlow"]
-    exploring: ["PyTorch", "Jekyll", "Flask", "Django", "React", "Bun"]
+  - established: ["Git", "Prefect", "Pandas", "dbt", "Dremio", "TensorFlow", "Django"]
+    exploring: ["PyTorch", "Jekyll", "Flask", "React", "Bun"]
 
 experience:
   - title: Data Engineer
