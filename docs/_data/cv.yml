@@ -44,7 +44,7 @@ experience:
       - label: Data management
         text: Owned data quality and governance, building dbt tests, schema checks and freshness monitoring with Dagster and Slack alerting, designing the client onboarding process, and managing access controls for compliance.
       - label: Infrastructure
-        text: Managed Azure infrastructure as code with Terraform/OpenTofu, with Docker deployments through CI/CD in Azure DevOps.
+        text: Managed Azure infrastructure in Terraform/OpenTofu, with Docker deployments via Azure DevOps CI/CD.
       - label: Product & hiring
         text: Helped shape the roadmap, prioritising by ROI and aligning stakeholders on expectations and timelines; ran technical interviews for data engineering roles, with input on hiring decisions.
     tech: ["Python", "SQL", "dbt", "DuckDB", "Dagster", "PostgreSQL", "Databricks", "Docker", "Azure", "Azure DevOps", "Terraform/OpenTofu", "LLM APIs"]

@@ -1,5 +1,5 @@
 {%- comment -%} Compact: role, org and description run together, date on the right. {%- endcomment -%}
-{%- for v in site.data.cv.volunteering %}
+{%- for v in site.data.cv.volunteering limit: include.limit %}
 <article class="cv-entry cv-entry--compact">
     <div class="cv-entry__head">
         <p><strong>{{ v.role }}</strong>, {{ v.org }} — {{ v.text }}</p>
