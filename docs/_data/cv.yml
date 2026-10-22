@@ -47,7 +47,7 @@ experience:
         text: Managed Azure infrastructure in Terraform/OpenTofu, with Docker deployments via Azure DevOps CI/CD.
       - label: Product & hiring
         text: Helped shape the roadmap, prioritising by ROI and aligning stakeholders on expectations and timelines; ran technical interviews for data engineering roles, with input on hiring decisions.
-    tech: ["Python", "SQL", "dbt", "DuckDB", "Dagster", "PostgreSQL", "Databricks", "Docker", "Azure", "Azure DevOps", "Terraform/OpenTofu", "LLM APIs"]
+    tech: ["Python", "SQL", "dbt", "DuckDB", "Dagster", "PostgreSQL", "Databricks", "Docker", "Azure", "Azure DevOps", "Terraform/OpenTofu", "REST APIs", "LLM APIs"]
 
   - title: Data Engineer
     company: InCrowd
@@ -58,7 +58,7 @@ experience:
       - text: Designed data models with client teams around their reporting needs.
       - text: Designed and built an automated GDPR data deletion service, streamlining a complex legal compliance process.
       - text: Set up pipeline monitoring and alerting, including data freshness checks.
-    tech: ["Python", "SQL", "dbt", "Prefect", "PostgreSQL", "AWS", "Snowplow", "Google Analytics", "REST APIs"]
+    tech: ["Python", "SQL", "dbt", "Prefect", "PostgreSQL", "AWS", "Snowplow", "Google Analytics"]
 
 education:
   - degree: BEng (Hons) Electronic Engineering with Nanotechnology
