@@ -42,23 +42,23 @@ experience:
       - label: Databricks
         text: Built the Databricks integration for enterprise clients, including a major international fashion brand.
       - label: Data management
-        text: Owned data quality and governance, building dbt tests, schema checks and freshness monitoring with alerting, designing the client onboarding process, and managing access controls for compliance.
+        text: Owned data quality and governance, building dbt tests, schema checks and freshness monitoring with Dagster and Slack alerting, designing the client onboarding process, and managing access controls for compliance.
       - label: Infrastructure
         text: Managed Azure infrastructure as code with Terraform/OpenTofu, with Docker deployments through CI/CD in Azure DevOps.
       - label: Product & hiring
         text: Helped shape the roadmap, prioritising by ROI and aligning stakeholders on expectations and timelines; ran technical interviews for data engineering roles, with input on hiring decisions.
-    tech: ["Python", "SQL", "dbt", "DuckDB", "PostgreSQL", "Databricks", "Docker", "Azure", "Azure DevOps", "Terraform/OpenTofu", "LLM APIs"]
+    tech: ["Python", "SQL", "dbt", "DuckDB", "Dagster", "PostgreSQL", "Databricks", "Docker", "Azure", "Azure DevOps", "Terraform/OpenTofu", "LLM APIs"]
 
   - title: Data Engineer
     company: InCrowd
     start: Oct 2021
     end: Mar 2024
     highlights:
-      - text: Built and maintained hundreds of SQL and dbt pipelines for major sports teams and leagues, and automated workflows in Python and Prefect.
+      - text: Built and maintained hundreds of SQL and dbt pipelines on AWS for major sports teams and leagues, and automated workflows in Python and Prefect.
       - text: Designed data models with client teams around their reporting needs.
       - text: Designed and built an automated GDPR data deletion service, streamlining a complex legal compliance process.
       - text: Set up pipeline monitoring and alerting, including data freshness checks.
-    tech: ["Python", "SQL", "dbt", "Prefect", "PostgreSQL", "Snowplow", "Google Analytics", "REST APIs"]
+    tech: ["Python", "SQL", "dbt", "Prefect", "PostgreSQL", "AWS", "Snowplow", "Google Analytics", "REST APIs"]
 
 education:
   - degree: BEng (Hons) Electronic Engineering with Nanotechnology
