@@ -25,3 +25,12 @@ After editing it, regenerate the PDF from the local server (with `jekyll serve` 
 ```
 
 Or open http://localhost:4000/cv/ in a browser and print to PDF with margins set to "None". Check it's still one page.
+
+## Link preview image
+
+`docs/assets/img/og.png` is the image shown when the site is shared (LinkedIn, Slack, etc.). Its source is `tools/og-card.html`; after editing, regenerate it:
+
+```sh
+"/c/Program Files/Google/Chrome/Application/chrome.exe" --headless=new --hide-scrollbars --virtual-time-budget=6000 \
+  --window-size=1200,630 --screenshot=docs/assets/img/og.png "file:///$PWD/tools/og-card.html"
+```
