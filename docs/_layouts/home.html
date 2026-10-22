@@ -1,0 +1,93 @@
+---
+layout: default
+---
+{%- assign cv = site.data.cv -%}
+<section class="wrap intro">
+    <p class="intro__role">{{ cv.basics.role }} · {{ cv.basics.location }}</p>
+    <h1 class="intro__name">{{ cv.basics.name }}</h1>
+    <div class="intro__summary">
+        {%- for para in cv.summary %}
+        <p>{{ para }}</p>
+        {%- endfor %}
+    </div>
+    {%- if cv.looking_for %}
+    <p class="intro__status">{{ cv.looking_for }}</p>
+    {%- endif %}
+    <ul class="intro__links">
+        <li><a href="mailto:{{ cv.basics.email }}">Email me</a></li>
+        <li><a href="{{ '/assets/pdf/josh-mackenzie-cv.pdf' | relative_url }}" target="_blank" rel="noopener">Download CV</a></li>
+        <li><a href="https://www.linkedin.com/in/{{ cv.basics.linkedin }}/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/{{ cv.basics.github }}" target="_blank" rel="noopener">GitHub</a></li>
+    </ul>
+</section>
+
+<section class="wrap section" id="experience" aria-labelledby="experience-heading">
+    <div class="section__head">
+        <h2 class="section__label" id="experience-heading">Experience</h2>
+        <a class="section__top" href="#top">Top <span aria-hidden="true">↑</span></a>
+    </div>
+    {%- for job in cv.experience %}
+    <article class="entry">
+        <p class="entry__when">{{ job.start }} – {{ job.end }}</p>
+        <div class="entry__body">
+            <h3 class="entry__title">{{ job.company }}{% if job.company_note %} <span class="entry__note">{{ job.company_note }}</span>{% endif %}</h3>
+            <p class="entry__sub">{{ job.title }}</p>
+            {%- if job.intro %}
+            <p class="entry__intro">{{ job.intro }}</p>
+            {%- endif %}
+            <ul class="entry__points">
+                {%- for item in job.highlights %}
+                <li>{% if item.label %}<strong class="entry__label">{{ item.label }}</strong>{% endif %}{{ item.text }}</li>
+                {%- endfor %}
+            </ul>
+            {%- if job.tech %}
+            <ul class="tech" aria-label="Technologies">
+                {%- for t in job.tech %}<li>{{ t }}</li>{% endfor -%}
+            </ul>
+            {%- endif %}
+        </div>
+    </article>
+    {%- endfor %}
+</section>
+
+<section class="wrap section" id="education" aria-labelledby="education-heading">
+    <div class="section__head">
+        <h2 class="section__label" id="education-heading">Education</h2>
+        <a class="section__top" href="#top">Top <span aria-hidden="true">↑</span></a>
+    </div>
+    {%- for edu in cv.education %}
+    <article class="entry">
+        <p class="entry__when">{{ edu.start }} – {{ edu.end }}</p>
+        <div class="entry__body">
+            <h3 class="entry__title">{{ edu.institution }}</h3>
+            <p class="entry__sub">{{ edu.degree }}<span class="grade">{{ edu.grade }}</span></p>
+            <ul class="entry__points">
+                {%- for item in edu.highlights %}
+                <li>{{ item }}</li>
+                {%- endfor %}
+            </ul>
+        </div>
+    </article>
+    {%- endfor %}
+</section>
+
+{%- if cv.volunteering %}
+<section class="wrap section" id="volunteering" aria-labelledby="volunteering-heading">
+    <div class="section__head">
+        <h2 class="section__label" id="volunteering-heading">Volunteering</h2>
+        <a class="section__top" href="#top">Top <span aria-hidden="true">↑</span></a>
+    </div>
+    {%- for v in cv.volunteering %}
+    <article class="entry entry--compact">
+        <p class="entry__when">{{ v.dates }}</p>
+        <div class="entry__body">
+            <h3 class="entry__title">{{ v.org }}</h3>
+            <p class="entry__sub">{{ v.role }}</p>
+            <ul class="entry__points">
+                <li>{{ v.text }}</li>
+            </ul>
+        </div>
+    </article>
+    {%- endfor %}
+</section>
+{%- endif %}

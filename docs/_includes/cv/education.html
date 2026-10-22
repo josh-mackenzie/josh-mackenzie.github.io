@@ -1,0 +1,14 @@
+{%- for edu in site.data.cv.education %}
+<article class="cv-entry">
+    <div class="cv-entry__head">
+        <h3>{{ edu.degree }}<span class="cv-entry__at">, {{ edu.institution }}</span></h3>
+        <p class="cv-entry__when">{{ edu.start }} – {{ edu.end }}</p>
+    </div>
+    <p class="cv-entry__sub"><strong>{{ edu.grade }}</strong></p>
+    <ul class="cv-points">
+        {%- for item in edu.highlights %}
+        <li>{{ item }}</li>
+        {%- endfor %}
+    </ul>
+</article>
+{%- endfor %}

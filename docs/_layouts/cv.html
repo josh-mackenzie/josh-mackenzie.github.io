@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{%- assign cv = site.data.cv %}
+<html lang="en-GB">
+    <head>
+        {% include head.html %}
+        <meta name="robots" content="noindex">
+        <link rel="stylesheet" href="{{ '/assets/css/cv.css' | relative_url }}">
+    </head>
+    <body>
+        <main class="sheet">
+            <header class="cv-head">
+                <div>
+                    <h1>{{ cv.basics.name }}</h1>
+                    <p class="cv-head__role">{{ cv.basics.role }} · {{ cv.basics.location }}</p>
+                </div>
+                {% include cv/contact.html %}
+            </header>
+
+            <div class="cv-summary">
+                {%- for para in cv.summary %}
+                <p>{{ para }}{% if forloop.last and cv.looking_for %} {{ cv.looking_for }}{% endif %}</p>
+                {%- endfor %}
+            </div>
+
+            <section class="cv-section">
+                <h2>Experience</h2>
+                {% include cv/experience.html %}
+            </section>
+
+            <section class="cv-section">
+                <h2>Education</h2>
+                {% include cv/education.html %}
+            </section>
+
+            {%- if cv.volunteering %}
+            <section class="cv-section">
+                <h2>Volunteering</h2>
+                {% include cv/volunteering.html %}
+            </section>
+            {%- endif %}
+        </main>
+    </body>
+</html>

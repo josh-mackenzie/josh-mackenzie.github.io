@@ -1,0 +1,19 @@
+{%- for job in site.data.cv.experience %}
+<article class="cv-entry">
+    <div class="cv-entry__head">
+        <h3>{{ job.title }}<span class="cv-entry__at">, {{ job.company }}{% if job.company_note %} ({{ job.company_note }}){% endif %}</span></h3>
+        <p class="cv-entry__when">{{ job.start }} – {{ job.end }}</p>
+    </div>
+    {%- if job.intro %}
+    <p class="cv-entry__intro">{{ job.intro }}</p>
+    {%- endif %}
+    <ul class="cv-points">
+        {%- for item in job.highlights %}
+        <li>{% if item.label %}<strong>{{ item.label }}:</strong> {% endif %}{{ item.text }}</li>
+        {%- endfor %}
+    </ul>
+    {%- if job.tech %}
+    <p class="cv-tech"><span class="cv-tech__label">Tech</span> {% for t in job.tech %}<span class="cv-tech__item">{{ t }}</span> {% endfor %}</p>
+    {%- endif %}
+</article>
+{%- endfor %}
