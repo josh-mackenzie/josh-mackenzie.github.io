@@ -1,4 +1,5 @@
-{%- for job in site.data.cv.experience %}
+{%- assign jobs = include.jobs | default: site.data.cv.experience -%}
+{%- for job in jobs %}
 <article class="cv-entry">
     <div class="cv-entry__head">
         <h3>{{ job.title }}<span class="cv-entry__at">, {{ job.company }}{% if job.company_note %} ({{ job.company_note }}){% endif %}</span></h3>

@@ -44,10 +44,10 @@ experience:
       - label: Data management
         text: Owned data quality and governance, building dbt tests, schema checks and freshness monitoring with alerting, designing the client onboarding process, and managing access controls for compliance.
       - label: Infrastructure
-        text: Managed Azure infrastructure as code with Terraform/OpenTofu, deployed through CI/CD in Azure DevOps.
+        text: Managed Azure infrastructure as code with Terraform/OpenTofu, with Docker deployments through CI/CD in Azure DevOps.
       - label: Product & hiring
         text: Helped shape the roadmap, prioritising by ROI and aligning stakeholders on expectations and timelines; ran technical interviews for data engineering roles, with input on hiring decisions.
-    tech: ["Python", "SQL", "dbt", "DuckDB", "PostgreSQL", "Databricks", "Azure", "Azure DevOps", "Terraform/OpenTofu", "LLM APIs"]
+    tech: ["Python", "SQL", "dbt", "DuckDB", "PostgreSQL", "Databricks", "Docker", "Azure", "Azure DevOps", "Terraform/OpenTofu", "LLM APIs"]
 
   - title: Data Engineer
     company: InCrowd
@@ -77,7 +77,7 @@ education:
 volunteering:
   - role: Organiser
     org: Limmud
-    dates: 2012 – Present
+    dates: 2012 – 2024
     text: Ran 3–7 day residential events for 200⁠–⁠3,000 attendees, covering catering, registration, accommodation, transport, tech and participant care.
   - role: Trustee
     org: University of York Students' Union

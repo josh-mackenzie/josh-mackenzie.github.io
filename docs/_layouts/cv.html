@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 {%- assign cv = site.data.cv %}
+{%- comment -%} A tailored page (front matter `tailored: <slug>`) overrides role, summary and experience from _data/tailored/<slug>.yml; everything else comes from cv.yml. {%- endcomment -%}
+{%- assign variant = site.data.tailored[page.tailored] %}
+{%- assign role = variant.role | default: cv.basics.role %}
+{%- assign summary = variant.summary | default: cv.summary %}
+{%- assign looking_for = variant.looking_for | default: cv.looking_for %}
+{%- assign jobs = variant.experience | default: cv.experience %}
 <html lang="en-GB">
     <head>
         {% include head.html %}
@@ -11,20 +17,20 @@
             <header class="cv-head">
                 <div>
                     <h1>{{ cv.basics.name }}</h1>
-                    <p class="cv-head__role">{{ cv.basics.role }} · {{ cv.basics.location }}</p>
+                    <p class="cv-head__role">{{ role }} · {{ cv.basics.location }}</p>
                 </div>
                 {% include cv/contact.html %}
             </header>
 
             <div class="cv-summary">
-                {%- for para in cv.summary %}
-                <p>{{ para }}{% if forloop.last and cv.looking_for %} {{ cv.looking_for }}{% endif %}</p>
+                {%- for para in summary %}
+                <p>{{ para }}{% if forloop.last and looking_for %} {{ looking_for }}{% endif %}</p>
                 {%- endfor %}
             </div>
 
             <section class="cv-section">
                 <h2>Experience</h2>
-                {% include cv/experience.html %}
+                {% include cv/experience.html jobs=jobs %}
             </section>
 
             <section class="cv-section">

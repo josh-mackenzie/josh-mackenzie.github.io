@@ -3,3 +3,7 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
+
+# Company-tailored CVs: built locally for applications, never published
+_data/tailored/
+tailored/
