@@ -36,7 +36,7 @@ experience:
       - label: Data engine
         text: Designed and built the core data platform from scratch, ingesting multi-source data, transforming it with dbt and DuckDB, and feeding the customer-facing product.
       - label: LLM bill extraction
-        text: Built a multi-model OCR tool (Claude, Gemini, GPT) to extract data from energy bill PDFs, reaching 95%+ accuracy across 1,200 bills and saving hundreds of hours of manual work.
+        text: Built a multi-model OCR tool (Claude, Gemini, GPT) to extract data from energy bill PDFs, reaching 95%+ accuracy across thousands of bills and saving hundreds of hours of manual work.
       - label: UN IOM
         text: Built the Python pipeline behind an LLM tool that classifies documents at scale for the International Organization for Migration.
       - label: Databricks
